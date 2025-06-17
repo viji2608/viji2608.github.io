@@ -50,7 +50,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile, index }) => {
               whileHover={{ scale: 1.1, rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-               <profile.icon className="w-6 h-6 transition-colors duration-300" style={{ color: profile.color }} />
+               <Github
+  className="w-6 h-6 transition-colors duration-300 group-hover:text-white"
+  style={{ color: profile.name === 'GitHub' ? profile.color : undefined }}
+/>
             </motion.div>
           </div>
 
