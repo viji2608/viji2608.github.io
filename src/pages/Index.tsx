@@ -101,7 +101,7 @@ const Index = () => {
       <motion.button
         title="Go to previous section"
         onClick={prevSection}
-        className="fixed left-4 top-[60%] transform -translate-y-1/2 z-50 p-3 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-all duration-300"
+        className="fixed left-4 top-[60%] transform -translate-y-1/2 z-50 p-3 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-all duration-300 shadow-lg"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
@@ -111,10 +111,11 @@ const Index = () => {
       </motion.button>
 
       <motion.button
+        title="Go to next section"
         onClick={nextSection}
-        className="fixed right-8 top-1/2 transform -translate-y-1/2 z-40 p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300"
+        className="fixed right-4 top-[60%] transform -translate-y-1/2 z-50 p-3 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-all duration-300 shadow-lg"
         whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileTap={{ scale: 0.95 }}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
