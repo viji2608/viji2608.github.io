@@ -6,7 +6,7 @@ export const profiles: CodingProfile[] = [
     username: "@viji2608",
     description: "Open source projects and contributions",
     stats: "10+ repositories",
-    color: "#181717",
+    color: "#0F2027",
     icon: "🗃️",
     url: "https://github.com/viji2608",
   },
