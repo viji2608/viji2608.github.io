@@ -19,7 +19,7 @@ const CallToAction: React.FC<CallToActionProps> = ({ nextSection }) => {
           transition={{ duration: 1, type: "spring" }}
           className="mb-12"
         >
-          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 pb-2 leading-[1.25] bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
             Ready to Work Together?
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
