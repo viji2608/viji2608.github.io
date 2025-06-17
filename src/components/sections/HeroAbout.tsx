@@ -59,7 +59,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({ nextSection }) => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-12"
+            className="text-sm md:text-xl text-white/80 leading-relaxed px-4 sm:px-8 md:px-16 pb-20 pt-2 z-10 relative"
           >
             “I am a Computer Science Engineering student with strong interests in full stack development, artificial intelligence, and data-driven problem-solving.
             I enjoy creating user-centric web applications and continuously exploring new technologies.”
