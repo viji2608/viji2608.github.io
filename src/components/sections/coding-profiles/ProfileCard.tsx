@@ -50,7 +50,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile, index }) => {
               whileHover={{ scale: 1.1, rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-              Github className="w-6 h-6 text-white/70 group-hover:text-white transition-colors duration-300" />
+              <Github className="w-6 h-6 text-white/70 group-hover:text-white transition-colors duration-300" />
             </motion.div>
           </div>
 
@@ -72,17 +72,20 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile, index }) => {
               {profile.stats}
             </motion.span>
 
-            <motion.button
-              className="text-sm font-semibold px-4 py-2 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-all duration-300 relative z-20"
-              whileHover={{ 
-                scale: 1.05,
-                borderColor: profile.color,
-                color: profile.color
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Visit
-            </motion.button>
+            <motion.a
+  href={profile.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm font-semibold px-4 py-2 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-all duration-300 relative z-20"
+  whileHover={{ 
+    scale: 1.05,
+    borderColor: profile.color,
+    color: profile.color
+  }}
+  whileTap={{ scale: 0.95 }}
+>
+  Visit
+</motion.a>
           </div>
         </div>
 
