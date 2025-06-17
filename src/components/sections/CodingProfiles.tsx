@@ -16,7 +16,7 @@ const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
           animate={{ y: 0, opacity: 1 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent px-4">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-relaxed bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent px-4">
             Coding Profiles
           </h1>
           <p className="text-xl text-white/80 px-4">
