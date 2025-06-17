@@ -16,7 +16,7 @@ const SocialLinks: React.FC = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 1, duration: 0.8 }}
-      className="top-8 left-8 z-50 flex flex-col space-y-4"
+      className="fixed bottom-8 left-8 z-50 flex flex-col space-y-4"
     >
       {socialLinks.map((social, index) => (
         <motion.a
@@ -25,7 +25,7 @@ const SocialLinks: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.label}
-          className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 group"
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 group"
           whileHover={{ scale: 1.1, rotate: 360 }}
           whileTap={{ scale: 0.9 }}
           initial={{ y: 50, opacity: 0 }}
