@@ -22,7 +22,7 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative">
+    <div className="min-h-screen flex items-center justify-center relative py-20">
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-black to-purple-900/20" />
       
       <div className="relative z-10 text-center px-6 max-w-4xl">
