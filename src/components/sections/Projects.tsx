@@ -47,7 +47,7 @@ const Projects: React.FC<ProjectsProps> = ({ nextSection }) => {
           animate={{ y: 0, opacity: 1 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-relaxed bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
             My Projects
           </h1>
           <p className="text-xl text-white/80">
