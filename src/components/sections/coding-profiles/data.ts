@@ -4,35 +4,26 @@ import { CodingProfile } from './types';
 export const profiles: CodingProfile[] = [
   {
     name: "GitHub",
-    username: "@johndoe",
+    username: "@viji2608",
     description: "Open source projects and contributions",
-    stats: "150+ repositories",
+    stats: "10+ repositories",
     color: "#181717",
-    icon: "🐙"
+    icon: ""
   },
+  {
+    name: "GeeksforGeeks",
+    username: @vijayalakshmi2608,
+    decription: "Data Structures and competitive problems",
+    stats: "350+ problems solved",
+    color: "#2F8D46",
+    icon: "📗"
   {
     name: "LeetCode",
     username: "@johndoe_dev",
     description: "Algorithm and data structure solutions",
     stats: "500+ problems solved",
     color: "#FF8C00",
-    icon: "🧮"
-  },
-  {
-    name: "CodePen",
-    username: "@johndoe_pen",
-    description: "Creative frontend experiments",
-    stats: "75+ pens",
-    color: "#000000",
-    icon: "✏️"
-  },
-  {
-    name: "Stack Overflow",
-    username: "@john_doe",
-    description: "Helping the developer community",
-    stats: "2.5k reputation",
-    color: "#F58025",
-    icon: "📚"
+    icon: "👩‍💻"
   },
   {
     name: "HackerRank",
@@ -42,12 +33,5 @@ export const profiles: CodingProfile[] = [
     color: "#00EA64",
     icon: "🏆"
   },
-  {
-    name: "Dev.to",
-    username: "@johndoe_dev",
-    description: "Technical articles and tutorials",
-    stats: "25+ articles",
-    color: "#0A0A0A",
-    icon: "📝"
-  }
+  
 ];
