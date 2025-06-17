@@ -40,7 +40,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({ nextSection }) => {
               ease: "linear"
             }}
           >
-            John Doe
+            Vijayalakshmi S
           </motion.h1>
 
           <motion.div
@@ -61,8 +61,8 @@ const HeroAbout: React.FC<HeroAboutProps> = ({ nextSection }) => {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-12"
           >
-            Passionate about creating immersive digital experiences with modern web technologies. 
-            Specializing in React, Three.js, and cutting-edge animations that bring ideas to life.
+            “I am a Computer Science Engineering student with strong interests in full stack development, artificial intelligence, and data-driven problem-solving.
+            I enjoy creating user-centric web applications and continuously exploring new technologies.”
           </motion.p>
 
           <motion.button
