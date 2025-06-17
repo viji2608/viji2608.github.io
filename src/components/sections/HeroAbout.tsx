@@ -30,7 +30,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({ nextSection }) => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.h1
-            className="text-6xl md:text-8xl font-black mb-6 pb-2 leading-[1.25] bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-8xl font-black mb-6 pb-2 leading-[1.25] bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
             animate={{ 
               backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
             }}
