@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Instagram, Youtube, Twitter } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-  { icon: Instagram, href: 'https://instagram.com/yourusername', label: 'Instagram' },
-  { icon: Youtube, href: 'https://youtube.com/@yourchannel', label: 'YouTube' },
-  { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/viji2608', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/vijayalakshmi-s2608', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://instagram.com/vijayalakshmi.400', label: 'Instagram' },
+  { icon: Youtube, href: 'https://youtube.com/@VijayalakshmiS-m2b', label: 'YouTube' },
+  { icon: Twitter, href: 'https://twitter.com/vijayalaks45059', label: 'X(Twitter)' },
 ];
 
 const SocialLinks: React.FC = () => {
