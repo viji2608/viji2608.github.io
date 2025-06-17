@@ -17,7 +17,7 @@ const SocialLinks: React.FC = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 1, duration: 0.8 }}
-      className="fixed bottom-8 left-8 z-30 flex flex-col space-y-4"
+      className="fixed bottom-8 left-8 z-50 flex flex-col space-y-4"
     >
       {socialLinks.map((social, index) => (
         <motion.a
