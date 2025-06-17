@@ -23,7 +23,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile, index }) => {
       }}
     >
       <motion.div
-        className="relative p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-400/50 transition-all duration-300 overflow-hidden z-10 min-h-[380px] flex flex-col justify-between"
+        className="relative p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-400/50 transition-all duration-300 overflow-hidden z-10 min-h-[300px] flex flex-col justify-between"
         whileHover={{ y: -10, scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
