@@ -6,6 +6,7 @@ export interface CodingProfile {
   stats: string;
   color: string;
   icon: string;
+  url: string;
 }
 
 export interface CodingProfilesProps {
