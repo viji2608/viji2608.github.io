@@ -1,4 +1,3 @@
-
 import { CodingProfile } from './types';
 
 export const profiles: CodingProfile[] = [
@@ -8,7 +7,7 @@ export const profiles: CodingProfile[] = [
     description: "Open source projects and contributions",
     stats: "10+ repositories",
     color: "#181717",
-    icon: ""
+    icon: "🗃️"
   },
   {
     name: "GeeksforGeeks",
