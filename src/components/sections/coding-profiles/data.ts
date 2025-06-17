@@ -12,14 +12,15 @@ export const profiles: CodingProfile[] = [
   },
   {
     name: "GeeksforGeeks",
-    username: @vijayalakshmi2608,
+    username: "@vijayalakshmi2608",
     decription: "Data Structures and competitive problems",
     stats: "350+ problems solved",
     color: "#2F8D46",
-    icon: "📗"
+    icon: "📗",
+  },
   {
     name: "LeetCode",
-    username: "@johndoe_dev",
+    username: "@vijayalakshmi2608",
     description: "Algorithm and data structure solutions",
     stats: "500+ problems solved",
     color: "#FF8C00",
@@ -27,11 +28,27 @@ export const profiles: CodingProfile[] = [
   },
   {
     name: "HackerRank",
-    username: "@johndoe123",
+    username: "@viji2608",
     description: "Competitive programming challenges",
     stats: "Gold badge holder",
     color: "#00EA64",
     icon: "🏆"
+  },
+  {
+    name: "Codeforces",
+    username: "@vijayalakshmi2608",
+    description: "Competitive programming Profile",
+    stats: "Solved 50+ problems",
+    color: "#1F8ACB",
+    icon: "⚔️",
+  },
+  {
+    name: "Codechef",
+    username: "@viji2608",
+    description: "Silver Badge Holder",
+    stats: "Solved 100+ Problems",
+    color: "#5B4638",
+    icon: "🧠",
   },
   
 ];
