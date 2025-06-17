@@ -52,7 +52,7 @@ export const profiles: CodingProfile[] = [
     username: "@viji2608",
     description: "Silver Badge Holder",
     stats: "Solved 100+ Problems",
-    color: "#5B4638",
+    color: "#2C5364",
     icon: "🧠",
     url: "https://www.codechef.com/users/viji2608",
   },
