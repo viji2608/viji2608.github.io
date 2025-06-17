@@ -61,24 +61,24 @@ const profiles = [
 
 const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
   return (
-    <div className="min-h-screen py-20 px-6">
+    <div className="min-h-screen py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-black to-fuchsia-900/20" />
       
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-20 max-w-6xl mx-auto">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent px-4">
             Coding Profiles
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-xl text-white/80 px-4">
             Connect with me across various coding platforms
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
           {profiles.map((profile, index) => (
             <motion.div
               key={profile.name}
@@ -93,7 +93,7 @@ const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
               }}
             >
               <motion.div
-                className="relative p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-400/50 transition-all duration-300 overflow-hidden"
+                className="relative p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-violet-400/50 transition-all duration-300 overflow-hidden z-10"
                 whileHover={{ y: -10, scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -115,7 +115,7 @@ const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
                       {profile.icon}
                     </motion.div>
                     <motion.div
-                      className="w-12 h-12 rounded-full flex items-center justify-center"
+                      className="w-12 h-12 rounded-full flex items-center justify-center relative z-20"
                       style={{ backgroundColor: `${profile.color}20` }}
                       whileHover={{ scale: 1.1, rotate: 360 }}
                       transition={{ duration: 0.5 }}
@@ -143,7 +143,7 @@ const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
                     </motion.span>
 
                     <motion.button
-                      className="text-sm font-semibold px-4 py-2 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-all duration-300"
+                      className="text-sm font-semibold px-4 py-2 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-all duration-300 relative z-20"
                       whileHover={{ 
                         scale: 1.05,
                         borderColor: profile.color,
@@ -176,7 +176,7 @@ const CodingProfiles: React.FC<CodingProfilesProps> = ({ nextSection }) => {
         </div>
 
         <motion.div
-          className="text-center mt-16"
+          className="text-center mt-16 px-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
