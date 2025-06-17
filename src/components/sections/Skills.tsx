@@ -10,7 +10,7 @@ interface SkillsProps {
 const skills = [
   { name: "React", level: 95, color: "#61DAFB" },
   { name: "TypeScript", level: 90, color: "#3178C6" },
-  { name: "Three.js", level: 85, color: "#000000" },
+  { name: "Three.js", level: 85, color: "#324AB2" },
   { name: "Node.js", level: 88, color: "#339933" },
   { name: "Python", level: 82, color: "#3776AB" },
   { name: "MongoDB", level: 80, color: "#47A248" },
