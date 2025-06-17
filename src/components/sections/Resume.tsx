@@ -46,13 +46,13 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
         >
           <div className="relative w-full h-full bg-white rounded-lg shadow-2xl overflow-hidden transform transition-all duration-500 group-hover:shadow-purple-500/25">
             <div className="p-6 bg-gradient-to-br from-purple-600 to-pink-600 text-white">
-              <h3 className="text-2xl font-bold">John Doe</h3>
+              <h3 className="text-2xl font-bold">Vijayalakshmi S</h3>
               <p className="text-purple-100">Full Stack Developer</p>
             </div>
             <div className="p-6 text-gray-800 space-y-4">
               <div>
                 <h4 className="font-bold text-purple-600">Experience</h4>
-                <p className="text-sm">Senior Developer at TechCorp</p>
+                <p className="text-sm">Intern at Zidio Development</p>
               </div>
               <div>
                 <h4 className="font-bold text-purple-600">Skills</h4>
@@ -60,7 +60,7 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
               </div>
               <div>
                 <h4 className="font-bold text-purple-600">Education</h4>
-                <p className="text-sm">CS Degree, MIT</p>
+                <p className="text-sm">Computer Science Engineering at Agni College Of Technology</p>
               </div>
             </div>
           </div>
