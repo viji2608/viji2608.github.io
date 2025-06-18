@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
@@ -10,17 +11,41 @@ interface ResumeProps {
 const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     setIsDownloading(true);
-
-    // Simulate loading effect
-    setTimeout(() => {
+    
+    try {
+      // Fetch the PDF file
+      const response = await fetch('/Vijayalakshmi_Resume.pdf');
+      
+      if (!response.ok) {
+        throw new Error('Resume file not found');
+      }
+      
+      // Create blob from response
+      const blob = await response.blob();
+      
+      // Create download link
+      const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
-      link.href = '/Vijayalakshmi_Resume.pdf'; // Ensure exact file name with extension
+      link.href = url;
       link.download = 'Vijayalakshmi_Resume.pdf';
+      
+      // Trigger download
+      document.body.appendChild(link);
       link.click();
+      
+      // Cleanup
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+      
+      console.log('Resume downloaded successfully');
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('Sorry, the resume file could not be downloaded. Please try again.');
+    } finally {
       setIsDownloading(false);
-    }, 1000); // 1 second for animation feel
+    }
   };
 
   return (
@@ -77,7 +102,7 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
         <motion.button
           onClick={handleDownload}
           disabled={isDownloading}
-          className="relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-bold text-xl overflow-hidden"
+          className="relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-bold text-xl overflow-hidden disabled:opacity-50"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           initial={{ y: 50, opacity: 0 }}
@@ -119,5 +144,3 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
 };
 
 export default Resume;
-
-
