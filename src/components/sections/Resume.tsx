@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 
 interface ResumeProps {
   nextSection: () => void;
-  prevSection: () => void;
+  prevSection?: () => void;
 }
 
 const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
@@ -12,18 +12,21 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
 
   const handleDownload = () => {
     setIsDownloading(true);
-    // Simulate download
+
+    // Simulate loading effect
     setTimeout(() => {
+      const link = document.createElement('a');
+      link.href = '/Vijayalakshmi_Resume.pdf'; // Ensure exact file name with extension
+      link.download = 'Vijayalakshmi_Resume.pdf';
+      link.click();
       setIsDownloading(false);
-      // Here you would trigger the actual download
-      console.log('Resume downloaded!');
-    }, 2000);
+    }, 1000); // 1 second for animation feel
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center relative py-20">
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-black to-purple-900/20" />
-      
+
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
@@ -66,14 +69,8 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
 
           <motion.div
             className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg blur-xl"
-            animate={{ 
-              scale: [1, 1.1, 1],
-              opacity: [0.3, 0.6, 0.3]
-            }}
-            transition={{ 
-              duration: 3, 
-              repeat: Infinity
-            }}
+            animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 3, repeat: Infinity }}
           />
         </motion.div>
 
@@ -101,7 +98,7 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
               className="absolute bottom-0 left-0 h-1 bg-white/50"
               initial={{ width: 0 }}
               animate={{ width: '100%' }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
             />
           )}
         </motion.button>
@@ -122,3 +119,5 @@ const Resume: React.FC<ResumeProps> = ({ nextSection }) => {
 };
 
 export default Resume;
+
+
